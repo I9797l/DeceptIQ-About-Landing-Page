@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "DeceptIQ About Landing Page"
+description = "A cinematic, scroll-driven About and landing page for DeceptIQ, a cybersecurity deception and active-defense platform. It visualizes the Cyber Defense Core separating into evidence, ATT&CK, D3FEND, honeytoken, and grounded AI layers before reassembling into a command center."
+version = "1.0.0"
+id = "artifacts/deceptiq-about"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26166
+
+[services.development]
+run = "pnpm --filter @workspace/deceptiq-about run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/deceptiq-about", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/deceptiq-about/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26166"
+BASE_PATH = "/"

@@ -1,0 +1,267 @@
+Build a complete, production-quality About/landing page for **DeceptIQ**, a cybersecurity deception and active-defense platform.
+
+Start from a clean React project. This request is fully self-contained; do not ask for previous project context.
+
+## Goal
+
+Create a cinematic scroll-driven website inspired by the interaction technique in the attached reference video: a central 3D product remains visible while scrolling, separates into internal layers, explains each layer, then reassembles at the end.
+
+Do not copy the phone, its components, text, branding or assets. Recreate the interaction quality using an original cybersecurity object designed specifically for DeceptIQ.
+
+This page will eventually become the landing page of `deceptiqs.org`, with an **Enter DeceptIQ** button leading to `/dashboard`.
+
+For now, build an isolated Replit preview only. Do not publish, connect a domain, modify DNS, access production or create a backend.
+
+## Brand and visual system
+
+Use DeceptIQ’s existing demo colors:
+
+* Main background: `#050506`
+* Cards/surfaces: `#0d0d11`
+* Elevated surfaces: `#14141a`
+* Violet: `#7c4dff`
+* Magenta: `#d6249c`
+* Cyan accent: `#25d9ff`
+* Muted violet borders
+* White primary text
+* Cool gray secondary text
+* Green, amber and red only for meaningful security states
+
+The website must feel like the same product as the DeceptIQ Dashboard:
+
+* Premium near-black canvas
+* Violet-to-magenta gradients
+* Subtle neon reflections
+* Fine security grid
+* Soft ambient lighting
+* Modern sans-serif typography
+* Monospace only for technical IDs and labels
+* Smooth 180–300ms interface transitions
+* No generic bright-blue corporate cybersecurity theme
+* No stock cybersecurity photos
+* No generic shield as the main object
+* No external fonts, CDNs or remote assets
+
+Use the uploaded DeceptIQ logo without distorting it. Preserve its real proportions using `object-fit: contain`; never force equal fixed width and height.
+
+## 3D Cyber Defense Core
+
+Create an original central 3D object named the **DeceptIQ Cyber Defense Core**.
+
+It should resemble a premium transparent layered intelligence engine containing:
+
+* A dark glass outer deception surface
+* Floating network nodes
+* A central violet energy core
+* Circular evidence rings
+* ATT&CK technique cells
+* Honeytoken nodes
+* An AI analysis layer
+* Fine data paths connecting all layers
+
+It must not look like a phone, laptop, server rack or ordinary shield.
+
+Use React Three Fiber / Three.js with all dependencies bundled locally.
+
+The 3D object must stay sticky in the viewport while the user scrolls. Scroll progress must control:
+
+* Camera movement
+* Object rotation
+* Layer separation
+* Layer opacity
+* Lighting
+* Data-path animation
+* Text transitions
+* Reassembly at the end
+
+Animate a hostile magenta/red signal entering the deception surface. Show it being captured, converted into an attack session, classified, mapped to ATT&CK, preserved as evidence, connected to D3FEND guidance and summarized by Qwen.
+
+## Page sequence
+
+### 1. Hero
+
+Display:
+
+**DeceptIQ**
+
+**Deception that thinks ahead.**
+
+“Turn attacker behavior into evidence, intelligence and defensive clarity.”
+
+Buttons:
+
+* Explore the System
+* Enter DeceptIQ
+
+The 3D core begins completely assembled, slowly rotating with subtle breathing light.
+
+### 2. Adaptive Deception
+
+As the user scrolls, open the outer layer and show the hostile signal entering controlled decoys.
+
+Text:
+
+**Adaptive Deception**
+
+“Engage attacker behavior inside believable controlled environments while keeping the real system outside the interaction.”
+
+### 3. Sessions and Attack Replay
+
+Separate the observation layer into paths representing traffic, alerts, tokens and session events.
+
+Text:
+
+**Every interaction becomes a story.**
+
+“DeceptIQ reconstructs attacker activity into sessions, timelines, flows and evidence-backed investigation views.”
+
+### 4. MITRE ATT&CK Intelligence
+
+Reveal a matrix of technique cells around the core. Illuminate only cells related to the animated attack path.
+
+Text:
+
+**Mapped to real adversary behavior.**
+
+“Observed actions are deterministically classified and mapped to pinned MITRE ATT&CK techniques.”
+
+Do not claim the AI performs deterministic classification.
+
+### 5. D3FEND Guidance
+
+Reveal a defensive ring surrounding the ATT&CK layer.
+
+Text:
+
+**From observation to defensive clarity.**
+
+“Verified ATT&CK evidence is connected to official D3FEND knowledge and locally supported defensive guidance.”
+
+Do not imply that DeceptIQ automatically executes destructive or autonomous responses.
+
+### 6. Honeytokens and Callbacks
+
+Show small luminous token nodes being planted across the object. Animate one verified callback returning to its original session.
+
+Text:
+
+**Evidence that calls back.**
+
+“Honeytokens preserve their origin, planted identity and callback provenance so an interaction can be traced to the session that created it.”
+
+### 7. Tamper-Evident Evidence
+
+Separate the evidence rings and animate linked hashes around the core.
+
+Text:
+
+**Evidence designed to be verified.**
+
+“Append-only event records and hash-chain verification make unexpected changes visible.”
+
+Do not call it blockchain.
+
+### 8. Grounded Qwen Analysis
+
+Reveal the inner AI layer as a controlled violet intelligence core. Real evidence paths must visibly feed into it.
+
+Text:
+
+**AI grounded in recorded evidence.**
+
+“Qwen produces system-wide security summaries and detailed investigations grounded in stored sessions, citations and deterministic classifications.”
+
+Clearly communicate:
+
+* Qwen summarizes and explains evidence
+* Deterministic logic remains authoritative
+* Fallback output must never be presented as Qwen
+* AI does not autonomously control defensive decisions
+
+### 9. Command Center
+
+Reassemble the layers into the complete DeceptIQ core. Transform its surrounding elements into a stylized preview of the real Dashboard visual language.
+
+Text:
+
+**One command center. Complete visibility.**
+
+“Sessions, traffic, alerts, honeytokens, ATT&CK coverage, defensive guidance, evidence integrity and AI analysis in one operator experience.”
+
+### 10. Final call to action
+
+Show the fully assembled core floating above the final section.
+
+Text:
+
+**See deception become intelligence.**
+
+“Enter the live DeceptIQ experience.”
+
+Add a prominent violet-to-magenta button:
+
+**Enter DeceptIQ**
+
+Set its destination through one clearly named constant:
+
+`PORTAL_URL = "/dashboard"`
+
+## Navigation
+
+Create a minimal transparent header containing:
+
+* DeceptIQ logo
+* About
+* Technology
+* Capabilities
+* Enter DeceptIQ
+
+The header should gain a blurred dark background after scrolling.
+
+The About page is separate from the internal portal navigation.
+
+## Technical requirements
+
+* React + Vite
+* React Three Fiber / Three.js
+* GSAP ScrollTrigger or an equally smooth locally bundled scroll system
+* No external CDNs
+* No external fonts
+* No backend
+* No fake API calls
+* No invented statistics, customers, integrations or awards
+* Reusable components and design tokens
+* Semantic HTML
+* Keyboard accessibility
+* Visible focus states
+* WCAG-readable contrast
+* No horizontal overflow
+* Responsive at 1440×900, 820×1180 and 390×844
+* Maintain smooth performance
+* Lazy-load the 3D scene
+* Display polished loading progress
+* Limit particles and expensive effects
+* Pause rendering when the tab is hidden
+* Respect `prefers-reduced-motion`
+* Provide a polished static layered illustration if WebGL is unavailable
+* On mobile, preserve the same story with a lighter 3D scene and shorter camera movements
+
+## Quality requirements
+
+Do not stop at a basic landing-page mockup.
+
+The central 3D object must visibly:
+
+* Rotate
+* Separate into distinct cybersecurity layers
+* React continuously to scroll position
+* Show the attack signal moving between layers
+* Reassemble at the end
+
+Each text section must synchronize with the correct 3D layer.
+
+The final result must feel cinematic, premium and clearly connected to the existing DeceptIQ Dashboard.
+
+Test the completed page at desktop, tablet and mobile sizes. Fix console errors, broken animations, layout shifts and overflow.
+
+When finished, show the working Replit preview and list the created files. Do not deploy, publish or connect a domain.
