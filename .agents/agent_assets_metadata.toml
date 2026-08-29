@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "bekywiRNBcWRJKAqBNxWf"
+uri = "file://.agents/outputs/deceptiq-about-source.zip"
+type = "unspecified"
+title = "DeceptIQ About source code"
+description = "Clean source ZIP for the current DeceptIQ landing-page artifact, excluding node_modules and build output."
+logical_id = "238bcffc-9e8b-486f-89fd-ff68aa4f91ce"
+content_hash = "sha256:0fd6076919c5f8bd3225c179ea278df97cc5d2de8680ae81f1749c12d2d283ab"
+size = 138646
+mtime_ms = 1787962844525
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:949dc754-baed-436f-924c-eb1605851e94/238bcffc-9e8b-486f-89fd-ff68aa4f91ce/e28b23ae-de53-453f-ad3c-890569c5ef85"
+storage_version_token = "1787962853762541"
+content_type = "application/octet-stream"
