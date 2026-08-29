@@ -153,7 +153,7 @@ const storyParts: StoryPart[] = [
 function Logo() {
   return (
     <Link href="/" className="wordmark" data-testid="link-home">
-      <span className="mark" aria-hidden="true" />
+      <img className="wordmark-logo" src={`${import.meta.env.BASE_URL}deceptiq-logo.png`} alt="" aria-hidden="true" />
       <span>DeceptIQ</span>
     </Link>
   );
